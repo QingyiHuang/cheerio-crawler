@@ -4,7 +4,7 @@ var cheerio = require('cheerio')//写爬虫
 var app = express();
 
 app.get('/', function (req, res, next) {
-  // 用 superagent 去抓取 https://cnodejs.org/ 的内容
+  // 用 superagent 去抓取 百思不得姐/ 的内容
   superagent.get('http://www.budejie.com/')
     .end(function (err, sres) {
       // 常规的错误处理
